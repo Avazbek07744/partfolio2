@@ -1,0 +1,356 @@
+
+.font {   
+    font-size: 16px;
+}
+
+body {
+    position: relative;
+    height: 100%;
+}
+
+.main-container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+.container .main {
+    @media (width <1100px) {
+        flex-direction: column;
+    }
+}
+
+.container {
+    nav #div .btn {
+        @media (width >1000px) {
+            display: none;
+        }
+    }
+
+    nav #div .btn {
+        @media (width <1000px) {
+            max-width: 300px;
+            margin-left: 30px;
+        }
+    }
+}
+
+.container nav #navbar {
+    @media (width >1000px) {
+        display: none;
+    }
+
+    nav #navbar {
+        @media (width <1000px) {
+            width: 100px;
+            margin-left: 10px;
+        }
+    }
+}
+
+.container nav .dir {
+    @media (width <1150px) {
+        gap: 0px;
+    }
+}
+
+.container nav {
+    @media (width <1130px) {
+        background: aquamarine;
+    }
+
+    ul {
+        @media (width <1150px) {
+            gap: 0px;
+        }
+
+        li a {
+            @media (width <1150px) {
+                display: none;
+                justify-content: right;
+            }
+        }
+
+        button {
+            @media (width <1200px) {
+                margin-inline-start: 5px;
+                padding-right: 5px;
+                padding-left: 5px;
+                background: aqua;
+            }
+        }
+    }
+}
+
+.container .card {
+    @media (width <1200px) {
+        flex-direction: column;
+    }
+
+    .card-body {
+        @media (width <900px) {
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-left: 200px;
+        }
+    }
+
+    .inputs {
+        @media (width <900px) {
+            flex-direction: column;
+        }
+    }
+
+    .intn {
+        @media (width <900px) {
+            margin-left: 0px;
+            margin-right: 0px;
+            max-width: 100px;
+        }
+    }
+
+    .btn {
+        @media (width <900px) {
+            margin-inline-start: 0px;
+            width: 200px;
+        }
+    }
+}
+
+.container .div {
+    @media (width <1200px) {
+        flex-direction: column;
+
+        span {
+            margin-top: 20px;
+        }
+
+        .spam {
+            margin-inline-start: 8px;
+            padding: 32px;
+        }
+    }
+
+    .flax {
+        @media (width <700px) {
+            flex-direction: column;
+            text-align: left;
+            max-width: 400px;
+
+            .snp {
+                margin-inline-start: 0px;
+            }
+
+            .smn {
+                margin-inline-end: 0px;
+            }
+
+        }
+    }
+}
+
+.container .main {
+    @media (width <1000px) {
+        flex-direction: column;
+    }
+
+    .right {
+        .carde {
+            @media (width <525px) {
+                flex-direction: column;
+            }
+        }
+    }
+
+    .left {
+        background: url(./img/about.jpg);
+        background-size: cover;
+        width: 550px;
+        height: 600px;
+    }
+}
+
+.container .main {
+    @media (width <1100px) {
+        flex-direction: column;
+    }
+}
+
+.container .wid {
+    @media (width <1100px) {
+        flex-direction: column;
+    }
+
+    .dim {
+        @media (width <720px) {
+            flex-direction: column;
+        }
+    }
+}
+
+.container {
+    @media (width <1200px) {
+        padding: 0px;
+    }
+
+    .cars {
+        @media (width <1200px) {
+            flex-direction: column;
+            padding-right: 0px;
+            padding-left: 0px;
+            justify-content: left;
+        }
+    }
+}
+
+.container .sdrs {
+    @media (width < 1200px) {
+        flex-direction: column;
+        gap: 0px;
+        justify-content: left;
+    }
+
+    img {
+        @media (width < 1200px) {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.container .div1 {
+    @media (width <700px) {
+        flex-direction: column;
+    }
+
+    .smp {
+        @media (width <1190px) {
+            flex-direction: column;
+        }
+    }
+}
+
+.container .div2 {
+    @media (width <1150px) {
+        flex-direction: column;
+    }
+
+    .div {
+        @media (width <1150px) {
+            margin-top: 20px;
+        }
+    }
+}
+
+.container {
+    .Packages {
+        @media (width <725px) {
+            flex-direction: column;
+
+            span {
+                margin-top: 20px;
+            }
+        }
+
+        .play {
+            @media (width <1150px) {
+                flex-direction: column;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+.container {
+    .futer-body {
+        @media (width <825px) {
+            flex-direction: column;
+            gap: 0px;
+
+            ul {
+                margin-top: 20px;
+            }
+        }
+
+        .futer-ul {
+            @media (width <1150px) {
+                flex-direction: column;
+                margin-top: 20px;
+                gap: 5px;
+            }
+        }
+    }
+}
+
+swiper-container {
+    max-width: 100%;
+    height: 100vh;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (width <1000px) {
+        max-width: 500px;
+        height: 500px;
+    }
+
+    button {
+        @media (width <1000px) {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+}
+
+.swiper1 {
+    background: url(./img/bg_1.jpg);
+    max-width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.swiper2 {
+    background: url(./img/bg_2.jpg);
+    max-width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+swiper-slide img {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#navbar {
+    display: none;
+    -tw-bg-opacity: 1;
+    background-color: rgb(209, 213, 219 / var(--tw-bg-opocity));
+}
+
+#navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#navbar ul li {
+    display: block;
+}
+
+#navbar ul li a {
+    display: block;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+}

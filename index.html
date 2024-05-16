@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <title>Toothcare</title>
+    <script src="./tailwind/tailwind.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container pt-5">
+        <div class="main flex justify-between max-w-[1300px] m-auto">
+            <span class="me-16">
+                <h1 class="text-blue-500 font-bold text-2xl">TOOTHCARE</h1>
+                <p class="text-gray-400 font-bold">DENTAL CLINIC SERVICES</p>
+            </span>
+            <div class="flex items-center gap-4">
+                <span>
+                    <h5 class="border border-blue-500 w-4 py-4 px-3"></h5>
+                </span>
+                <span>
+                    <h2 class="text-blue-500">Monday - Friday</h2>
+                    <p class="text-gray-400 font-bold">8:00AM-8:00PM</p>
+                </span>
+            </div>
+            <div class="flex items-center gap-4">
+                <span>
+                    <h5 class="border border-blue-500 w-4 py-4 px-3"></h5>
+                </span>
+                <span>
+                    <h2 class="text-blue-500">Call Us</h2>
+                    <p class="text-gray-400 font-bold">+2 392 3929 210</p>
+                </span>
+            </div>
+            <div class="flex items-center gap-4">
+                <span>
+                    <h5 class="border border-blue-500 w-4 py-4 px-3"></h5>
+                </span>
+                <span>
+                    <h2 class="text-blue-500">Location</h2>
+                    <p class="text-gray-400 font-bold">San Francisco, California, USA</p>
+                </span>
+            </div>
+        </div>
+        <nav class="bg-gray-300">
+            <div class="dir mt-5 flex gap-10 items-center">
+                <div id="div">
+                    <button class="btn text-white" id="toggleButton">MENUE</button>
+                    <div id="navbar">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Dentist</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="flex gap-11 font-bold ms-28 text-gray-400 items-center justify-center">
+                    <li><a class="text-blue-500" href="">Home</a></li>
+                    <li><a href="">Dentist</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                    <button class="text-white bg-blue-500 px-10 py-7 ms-96">MAKE AN APPOINTMENT</button>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <swiper-container class="mySwiper" space-between="30" pagination="true" pagination-clickable="true">
+        <swiper-slide class="swiper1">
+            <div class="text-start me-[600px]">
+                <h1 class="text-5xl text-white">Dentist Services <br> that You Can Trust</h1>
+                <p class="text-sm text-gray-400 mt-5">Far far away, behind the word mountains, far from the countries
+                    Vokalia <br> and Consonantia, there live the blind texts.</p>
+                <button class="bg-blue-500 text-white px-5 p-2 rounded mt-5">SEE OUR SERVICES</button>
+                <button class="text-blue-500 bg-white px-3 p-2 rounded mt-5">WIEV COURSE</button>
+            </div>
+        </swiper-slide>
+        <swiper-slide class="swiper2">
+            <div class="text-start me-[600px]">
+                <h1 class="text-5xl text-white">A Brighter Dental <br> Experienced</h1>
+                <p class="text-sm text-gray-400 mt-5">Far far away, behind the word mountains, far from the countries
+                    Vokalia <br> and Consonantia, there live the blind texts.</p>
+                <button class="bg-blue-500 text-white px-5 p-2 rounded mt-5">MAKE AN APPOINTMENT</button>
+                <button class="text-blue-500 bg-white px-3 p-2 rounded mt-5">WIEV COURSE</button>
+            </div>
+        </swiper-slide>
+    </swiper-container>
+
+    <div class="container">
+        <div class="card flex gap-20 items-center justify-start bg-gray-100">
+            <div class="card-body bg-blue-500 text-white max-w-[650px] py-12 px-20">
+                <span>
+                    <p class="ms-10 text-sm">WE ARE HERE FOR YOU</p>
+                    <h1 class="ms-10 text-2xl">Make An Appointment</h1>
+                </span>
+                <div class="inputs flex justify-between">
+                    <div class="flex flex-col gap-10 p-10">
+                        <span>
+                            <p>YOUR FULL NAME</p>
+                            <input class="text-black" type="text">
+                        </span>
+                        <span>
+                            <p>PHONE NUMBER</p>
+                            <input class="text-black" type="number">
+                        </span>
+                        <span>
+                            <p>APPOINTMENT TIME</p>
+                            <input class="text-black" type="time">
+                        </span>
+                    </div>
+                    <div class="flex flex-col gap-10 p-10">
+                        <span>
+                            <p>EMAIL ADDRESS</p>
+                            <input class="text-black" type="email">
+                        </span>
+                        <span>
+                            <p>APPOINTMENT DATE</p>
+                            <input class="text-black" type="date">
+                        </span>
+                        <span>
+                            <p>SELECT A DOCTOR</p>
+                            <input class="text-black" type="text">
+                        </span>
+                    </div>
+                </div>
+                <p class="ps-10">MESSAGE</p>
+                <input class="intn max-w-full p-20 mx-10 text-black" type="text">
+                <button class="btn bg-blue-400 max-w-full text-white p-5 ms-10 mt-10">SEND MESSAGE</button>
+            </div>
+            <div>
+                <p class="text-blue-400 font-bold px-5">LEARN ANYTHING</p>
+                <h1 class="text-4xl ps-5 mb-10">We Offer Best Dental Services</h1>
+                <div>
+                    <div class="hover:bg-blue-400 bg-white my-2 px-16 py-10">
+                        <span class="hover:text-white ">
+                            <h1 class="text-xl">Easy Booking</h1>
+                            <p>Far far away, behind the word mountains, far from the countries <br> Vokalia and
+                                Consonantia, there live the blind texts.</p>
+                        </span>
+                    </div>
+                    <div class="hover:bg-blue-400 bg-white my-2 px-16 py-10">
+                        <span class="hover:text-white ">
+                            <h1 class="text-xl">Team Dentist</h1>
+                            <p>Far far away, behind the word mountains, far from the countries <br> Vokalia and
+                                Consonantia, there live the blind texts.</p>
+                        </span>
+                    </div>
+                    <div class="hover:bg-blue-400 bg-white my-2 px-16 py-10">
+                        <span class="hover:text-white ">
+                            <h1 class="text-xl">Best Price Guarantee</h1>
+                            <p>Far far away, behind the word mountains, far from the countries <br> Vokalia and
+                                Consonantia, there live the blind texts.</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-20 text-center bg-gray-300">
+        <p class="text-center text-blue-400 font-bold">SERVICES</p>
+        <h1 class="text-5xl">Toothcare Services</h1>
+        <div class="div flex gap-16 justify-center main-container mt-20">
+            <div class="flax flex">
+                <span class="hover:bg-blue-400 p-5 py-10 bg-white">
+                    <span class="hover:text-white">
+                        <h3 class="text-3xl font-bold hover:text-white mb-4">Tooth Protection</h3>
+                        <p class="font">
+                            Far far away, behind the <br> word mountains, far from <br>the countries Vokalia and
+                            <br>Consonantia, there live the <br>blind texts.
+                        </p>
+                    </span>
+                </span>
+                <span class="hover:bg-blue-400 snp p-9 py-10 ms-16 bg-white">
+                    <span class="hover:text-white">
+                        <h3 class="text-3xl font-bold hover:text-white mb-4">Dental Implants</h3>
+                        <p class="font">
+                            Far far away, behind the <br> word mountains, far from <br>the countries Vokalia and
+                            <br>Consonantia, there live the <br>blind texts.
+                        </p>
+                    </span>
+                </span>
+            </div>
+            <div class="flax flex">
+                <span class="hover:bg-blue-400 smn p-10 py-10 me-16 bg-white">
+                    <span class="hover:text-white">
+                        <h3 class="text-3xl font-bold hover:text-white">Dental Care</h3>
+                        <p class="font">
+                            Far far away, behind the <br> word mountains, far from <br>the countries Vokalia and
+                            <br>Consonantia, there live the <br>blind texts.
+                        </p>
+                    </span>
+                </span>
+                <span class="hover:bg-blue-400 spam p-7 py-10 bg-white">
+                    <span class="hover:text-white">
+                        <h3 class="text-3xl font-bold hover:text-white">Teeth Whitening</h3>
+                        <p class="font">
+                            Far far away, behind the <br> word mountains, far from <br>the countries Vokalia and
+                            <br>Consonantia, there live the <br>blind texts.
+                        </p>
+                    </span>
+                </span>
+            </div>
+        </div>
+        <div class="div flex gap-16 justify-center main-container mt-20">
+            <div class="flax flex">
+                <span class="hover:bg-blue-400 p-8 py-10 bg-white">
+                    <span class="hover:text-white">
+                        <h3 class="text-3xl font-bold mb-4 ">Dental Caculus</h3>
+                        <p class="font">
+                            Far far away, behind the <br> word mountains, far from <br>the countries Vokalia and
+                            <br>Consonantia, there live the <br>blind texts.
+                        </p>
+                    </span>
+                </span>
+                <span class="hover:bg-blue-400 snp p-8 py-10 ms-16 bg-white">
+                    <span class="hover:text-white">
+                        <h3 class="text-3xl font-bold mb-4 ">Tooth Removal</h3>
+                        <p class="font">
+                            Far far away, behind the <br> word mountains, far from <br>the countries Vokalia and
+                            <br>Consonantia, there live the <br>blind texts.
+                        </p>
+                    </span>
+                </span>
+            </div>
+            <div class="flax flex">
+                <span class="hover:bg-blue-400 smn p-3 py-10 me-16 bg-white">
+                    <span class="hover:text-white">
+                        <h3 class="text-3xl font-bold ">Removal of Tartar</h3>
+                        <p class="font">
+                            Far far away, behind the <br> word mountains, far from <br>the countries Vokalia and
+                            <br>Consonantia, there live the <br>blind texts.
+                        </p>
+                    </span>
+                </span>
+                <span class="hover:bg-blue-400 p-5 py-10 bg-white">
+                    <span class="hover:text-white">
+                        <h3 class="text-3xl font-bold ">Tooth Inspection</h3>
+                        <p class="font">
+                            Far far away, behind the <br> word mountains, far from <br>the countries Vokalia and
+                            <br>Consonantia, there live the <br>blind texts.
+                        </p>
+                    </span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="main flex justify-center gap-28 items-center">
+            <div class="left"></div>
+            <div class="right">
+                <h5 class="text-blue-500 mb-2">WELCOME TO OUR DENTAL CLINIC</h5>
+                <h1 class="text-3xl mb-5">Toothcare is a Dental Clinic and <br>Innovative Approach to Treatment</h1>
+                <p class="mb-14 font">Far far away, behind the word mountains, far from the countries Vokalia and
+                    <br>Consonantia, there
+                    live the blind texts. Separated they live in Bookmarksgrove right at <br>the coast of the Semantics,
+                    a large language ocean.
+                </p>
+                <div class="carde flex items-center gap-20">
+                    <span class="border border-blue-500 rounded p-3">
+                        <h4 class="text-blue-500 text-xl">3,000</h4>
+                        <h6 class="text-gray-400">HAPPY <br>PATIENTS</h6>
+                    </span>
+                    <span class="border border-blue-500 rounded p-3">
+                        <h4 class="text-blue-500 text-xl">2,200</h4>
+                        <h6 class="text-gray-400">PERFORMED <br>TREATMENTS</h6>
+                    </span>
+                    <span class="border border-blue-500 rounded p-3">
+                        <h4 class="text-blue-500 text-xl">24</h4>
+                        <h6 class="text-gray-400">YEAR OF <br>EXPERIENCED</h6>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container pt-36 bg-gray-200">
+        <p class="text-center text-blue-400">OUR DOCTORS</p>
+        <h1 class="text-center text-4xl">Qualified Dentist</h1>
+        <div class="wid flex items-center justify-center gap-10 mt-28">
+            <div class="dim flex gap-10">
+                <span class=" text-center pt-32 bg-white p-5 hover:bg-blue-300">
+                    <span class="hover:text-white">
+                        <h2 class="mb-3 text-xl">Dr. Lloyd Wilson</h2>
+                        <h5 class="mb-3 text-blue-400">HEAD DENTIST</h5>
+                        <ul class="flex items-center justify-center gap-2 mb-5">
+                            <li><a class="bg-blue-500 px-5 py-3 rounded-[50%]" href=""></a></li>
+                            <li><a class="bg-blue-500 px-5 py-3 rounded-[50%]" href=""></a></li>
+                            <li><a class="bg-blue-500 px-5 py-3 rounded-[50%]" href=""></a></li>
+                            <li><a class="bg-blue-500 px-5 py-3 rounded-[50%]" href=""></a></li>
+                        </ul>
+                        <p class="text-gray-300 pb-10 text-xl">I am an ambitious workaholic, but <br>apart from that,
+                            pretty simple <br>person.</p>
+                    </span>
+                </span>
+                <span class=" text-center pt-32 bg-white p-5 hover:bg-blue-300">
+                    <span class="hover:text-white">
+                        <h2 class="mb-3 text-xl">Dr. Rachel Parker</h2>
+                        <h1 class="mb-3 text-blue-400">DENTIST</h1>
+                        <ul class="flex items-center justify-center gap-2 mb-5">
+                            <li><a class="bg-blue-500 px-5 py-3 rounded-[50%]" href=""></a></li>
+                            <li><a class="bg-blue-500 px-5 py-3 rounded-[50%]" href=""></a></li>
+                            <li><a class="bg-blue-500 px-5 py-3 rounded-[50%]" href=""></a></li>
+                            <li><a class="bg-blue-500 px-5 py-3 rounded-[50%]" href=""></a></li>
+                        </ul>
+                        <p class="text-gray-300 pb-10 text-xl">I am an ambitious workaholic, but <br>apart from that,
+                            pretty simple <br>person.</p>
+                    </span>
+                </span>
+            </div>
+            <div class="dim flex gap-10">
+                <span class=" text-center pt-32 bg-white p-5 hover:bg-blue-300">
+                    <span class="hover:text-white">
+                        <h2 class="mb-3 text-xl">Dr. Lloyd Wilson</h2>
+                        <h5 class="mb-3 text-blue-400">HEAD DENTIST</h5>
+                        <ul class="flex items-center justify-center gap-2 mb-5">
+                            <li><a class="bg-blue-500 px-5 py-3 rounded-[50%]" href=""></a></li>
+                            <li><a class="bg-blue-500 px-5 py-3 rounded-[50%]" href=""></a></li>
+                            <li><a class="bg-blue-500 px-5 py-3 rounded-[50%]" href=""></a></li>
+                            <li><a class="bg-blue-500 px-5 py-3 rounded-[50%]" href=""></a></li>
+                        </ul>
+                        <p class="text-gray-300 pb-10 text-xl">I am an ambitious workaholic, but <br>apart from that,
+                            pretty simple <br>person.</p>
+                    </span>
+                </span>
+                <span class=" text-center pt-32 bg-white p-5 hover:bg-blue-300">
+                    <span class="hover:text-white">
+                        <h2 class="mb-3 text-xl">Dr. Rachel Parker</h2>
+                        <h1 class="mb-3 text-blue-400">DENTIST</h1>
+                        <ul class="flex items-center justify-center gap-2 mb-5">
+                            <li><a class="bg-blue-500 px-5 py-3 rounded-[50%]" href=""></a></li>
+                            <li><a class="bg-blue-500 px-5 py-3 rounded-[50%]" href=""></a></li>
+                            <li><a class="bg-blue-500 px-5 py-3 rounded-[50%]" href=""></a></li>
+                            <li><a class="bg-blue-500 px-5 py-3 rounded-[50%]" href=""></a></li>
+                        </ul>
+                        <p class="text-gray-300 pb-10 text-xl">I am an ambitious workaholic, but <br>apart from that,
+                            pretty simple <br>person.</p>
+                    </span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container bg-blue-500 p-10 mt-20">
+        <div class="cars flex justify-between px-20 items-center">
+            <span class="text-white text-xl">
+                <p>BOOK YOUR APPOINTMENT</p>
+                <h1 class="text-3xl">Do not wait make an appointment today!</h1>
+            </span>
+            <span>
+                <button class="btn py-4 px-10 rounded bg-white text-blue-400">Make An Appointment</button>
+            </span>
+        </div>
+    </div>
+
+    <div class="container mt-20">
+        <div class="text-center mb-24">
+            <p class="text-blue-400 text-xl">TESTIMONIAL</p>
+            <h1 class="text-4xl">Happy Customers</h1>
+        </div>
+        <div class="sdrs flex items-center justify-center gap-10">
+            <span>
+                <p class="text-gray-500 bg-white p-5 w-max text-xl mb-5">Far far away, behind the word mountains,
+                    far <br>from the countries Vokalia and Consonantia, <br>there
+                    live the blind texts.
+                </p>
+                <span class="flex items-center gap-3">
+                    <img class="max-w-16 rounded-full" src="./img/person_1.jpg" alt="">
+                    <span>
+                        <p class="text-lg font-bold">ROGER SCOTT</p>
+                        <h2 class="text-blue-400">MARKETING MANAGER</h2>
+                    </span>
+                </span>
+            </span>
+            <span>
+                <p class="text-gray-500 bg-white p-5 w-max text-xl mb-5">Far far away, behind the word mountains,
+                    far <br>from the countries Vokalia and Consonantia, <br>there
+                    live the blind texts.
+                </p>
+                <span class="flex items-center gap-3">
+                    <img class="max-w-16 rounded-full" src="./img/person_3.jpg" alt="">
+                    <span>
+                        <p class="text-lg font-bold">ROGER SCOTT</p>
+                        <h2 class="text-blue-400">MARKETING MANAGER</h2>
+                    </span>
+                </span>
+            </span>
+            <span>
+                <p class="text-gray-500 bg-white p-5 w-max text-xl mb-5">Far far away, behind the word mountains,
+                    far <br>from the countries Vokalia and Consonantia, <br>there
+                    live the blind texts.
+                </p>
+                <span class="flex items-center gap-3">
+                    <img class="w-16 rounded-full" src="./img/person_4.jpg" alt="">
+                    <span>
+                        <p class="text-lg font-bold">ROGER SCOTT</p>
+                        <h2 class="text-blue-400">MARKETING MANAGER</h2>
+                    </span>
+                </span>
+            </span>
+        </div>
+    </div>
+
+    <div class="container text-center mt-20">
+        <p class="text-xl text-blue-400">STORIES</p>
+        <h1 class="text-4xl">Result of our Treatment and Work</h1>
+        <div class="div1 flex items-center mt-16">
+            <span class="smp flex">
+                <span><img class="max-w-96" src="./img/result-1.jpg" alt=""></span>
+                <span><img class="max-w-96" src="./img/result-2.jpg" alt=""></span>
+            </span>
+            <span class="smp flex">
+                <span><img class="max-w-96" src="./img/result-3.jpg" alt=""></span>
+                <span><img class="max-w-96" src="./img/result-4.jpg" alt=""></span>
+            </span>
+        </div>
+    </div>
+
+    <div class="container mt-28">
+        <p class="text-blue-400 text-center">OUR BLOG</p>
+        <h1 class="text-4xl text-center mb-16">Recent From Blog</h1>
+        <div class="div2 flex items-center justify-center gap-10 ">
+            <div class="max-w-[430px]">
+                <img src="./img/image_1.jpg" alt="">
+                <span class="px-5 flex items-center gap-10">
+                    <p class="text-gray-400">ADMIN</p>
+                    <p class="text-gray-400">JAN. 20, 2021</p>
+                    <p class="text-blue-400"> 3 COMMENTS</p>
+                </span>
+                <h1 class="px-5 hover:text-blue-400 text-xl">How to keep your teeth always in the <br>best condition
+                </h1>
+                <p class="px-5 text-gray-400">A small river named Duden flows by their place <br>and supplies it with
+                    the necessary regelialia.</p>
+            </div>
+            <div class="max-w-[430px]">
+                <img src="./img/image_1.jpg" alt="">
+                <span class="px-5 flex items-center gap-10">
+                    <p class="text-gray-400">ADMIN</p>
+                    <p class="text-gray-400">JAN. 20, 2021</p>
+                    <p class="text-blue-400"> 3 COMMENTS</p>
+                </span>
+                <h1 class="px-5 hover:text-blue-400 text-xl">How to keep your teeth always in the <br>best condition
+                </h1>
+                <p class="px-5 text-gray-400">A small river named Duden flows by their place <br>and supplies it with
+                    the necessary regelialia.</p>
+            </div>
+            <div class="max-w-[430px]">
+                <img src="./img/image_3.jpg" alt="">
+                <span class="px-5 flex items-center gap-10">
+                    <p class="text-gray-400">ADMIN</p>
+                    <p class="text-gray-400">JAN. 20, 2021</p>
+                    <p class="text-blue-400"> 3 COMMENTS</p>
+                </span>
+                <h1 class="px-5 hover:text-blue-400 text-xl">How to keep your teeth always in the <br>best condition
+                </h1>
+                <p class="px-5 text-gray-400">A small river named Duden flows by their place <br>and supplies it with
+                    the necessary regelialia.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-40 bg-gray-200">
+        <p class="text-blue-400 text-center">OUR PRICING</p>
+        <h1 class="text-4xl text-center">Pricing & Packages</h1>
+        <div class="Packages flex items-center gap-7 justify-center mt-16">
+            <div class="play flex items-center gap-7">
+                <span class="text-center p-10 hover:bg-white transition border border-gray-300 rounded">
+                    <h1>BASIC PLAN</h1>
+                    <span class="flex font-bold justify-center">
+                        <p class="text-blue-400">$</p>
+                        <h1 class="text-blue-400 text-3xl">50</h1>
+                    </span>
+                    <p class="text-gray-400 py-2">-> Diagnostic Services</p>
+                    <p class="text-gray-400 py-2">-> Professional Consultation</p>
+                    <p class="text-gray-400 py-2">-> Tooth Implants</p>
+                    <p class="text-gray-400 py-2">-> Surgical Extractions</p>
+                    <p class="text-gray-400 py-2">-> Teeth Whitening</p>
+                    <p class="text-gray-400 py-2">-> Teeth Cleaning</p>
+                    <button class="text-white bg-blue-400 rounded px-10 py-3">GET STARTED</button>
+                </span>
+                <span class="text-center p-10 hover:bg-white transition border border-gray-300 rounded">
+                    <h1>BEGINNER PLAN</h1>
+                    <span class="flex font-bold justify-center">
+                        <p class="text-blue-400">$</p>
+                        <h1 class="text-blue-400 text-3xl">79</h1>
+                    </span>
+                    <p class="text-gray-400 py-2">-> Diagnostic Services</p>
+                    <p class="text-gray-400 py-2">-> Professional Consultation</p>
+                    <p class="text-gray-400 py-2">-> Tooth Implants</p>
+                    <p class="text-gray-400 py-2">-> Surgical Extractions</p>
+                    <p class="text-gray-400 py-2">-> Teeth Whitening</p>
+                    <p class="text-gray-400 py-2">-> Teeth Cleaning</p>
+                    <button class="text-white bg-blue-400 rounded px-10 py-3">GET STARTED</button>
+                </span>
+            </div>
+            <div class="play flex items-center gap-7">
+                <span class="text-center p-10 hover:bg-white transition border border-gray-300 rounded">
+                    <h1>PREMIUM PLAN</h1>
+                    <span class="flex font-bold justify-center">
+                        <p class="text-blue-400">$</p>
+                        <h1 class="text-blue-400 text-3xl">89</h1>
+                    </span>
+                    <p class="text-gray-400 py-2">-> Diagnostic Services</p>
+                    <p class="text-gray-400 py-2">-> Professional Consultation</p>
+                    <p class="text-gray-400 py-2">-> Tooth Implants</p>
+                    <p class="text-gray-400 py-2">-> Surgical Extractions</p>
+                    <p class="text-gray-400 py-2">-> Teeth Whitening</p>
+                    <p class="text-gray-400 py-2">-> Teeth Cleaning</p>
+                    <button class="text-white bg-blue-400 rounded px-10 py-3">GET STARTED</button>
+                </span>
+                <span class="text-center p-10 hover:bg-white transition border border-gray-300 rounded">
+                    <h1>ULTIMATE PLAN</h1>
+                    <span class="flex font-bold justify-center">
+                        <p class="text-blue-400">$</p>
+                        <h1 class="text-blue-400 text-3xl">99</h1>
+                    </span>
+                    <p class="text-gray-400 py-2">-> Diagnostic Services</p>
+                    <p class="text-gray-400 py-2">-> Professional Consultation</p>
+                    <p class="text-gray-400 py-2">-> Tooth Implants</p>
+                    <p class="text-gray-400 py-2">-> Surgical Extractions</p>
+                    <p class="text-gray-400 py-2">-> Teeth Whitening</p>
+                    <p class="text-gray-400 py-2">-> Teeth Cleaning</p>
+                    <button class="text-white bg-blue-400 rounded px-10 py-3">GET STARTED</button>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-32 bg-blue-400 py-16">
+        <div class="futer-body flex items-center gap-28 justify-center text-white ">
+            <div class="futer-ul flex items-center gap-10">
+                <ul>
+                    <li><a href="">
+                            <h1 class="text-3xl">TOOTHCARE</h1>
+                            <p>DENTAL CLINIC SERVICES</p>
+                        </a></li>
+                    <li class="text-xl my-16"><a href="">
+                            <p>A small river named Duden flows by <br>their place and supplies it with the <br>necessary
+                                regelialia.</p>
+                        </a></li>
+                </ul>
+                <ul>
+                    <li class=""><a href="">
+                            <h1 class="text-2xl">Services</h1>
+                        </a></li>
+                    <li class="my-5"><a class="hover:text-blue-400" href="">Tooth Protection</a></li>
+                    <li class="my-5"><a class="hover:text-blue-400" href="">Dental Implants</a></li>
+                    <li class="my-5"><a class="hover:text-blue-400" href="">Dental Care</a></li>
+                    <li class="my-5"><a class="hover:text-blue-400" href="">Teeth Whitening</a></li>
+                    <li class="my-5"><a class="hover:text-blue-400" href="">Dental Calculus</a></li>
+                </ul>
+            </div>
+            <div class="futer-ul flex items-center gap-10">
+                <ul>
+                    <li class=""><a href="">
+                            <h1 class="text-2xl">Quick Links</h1>
+                        </a></li>
+                    <li class="my-3"><a class="hover:text-blue-400" href="">Home</a></li>
+                    <li class="my-4"><a class="hover:text-blue-400" href="">About</a></li>
+                    <li class="my-4"><a class="hover:text-blue-400" href="">Services</a></li>
+                    <li class="my-3"><a class="hover:text-blue-400" href="">Dentist & Condition</a></li>
+                    <li class="my-4"><a class="hover:text-blue-400" href="">Blog</a></li>
+                    <li class="my-3"><a class="hover:text-blue-400" href="">Contact</a></li>
+                </ul>
+                <ul>
+                    <li class=""><a href="">
+                            <h1 class="text-2xl">Recent Posts</h1>
+                        </a></li>
+                    <li class="my-6"><a class="hover:text-blue-400" href="">
+                            <span class="flex items-center gap-5">
+                                <img class="w-16" src="./img/image_1.jpg" alt="">
+                                <span>
+                                    <span class="flex gap-2">
+                                        <p>Jan.</p>
+                                        <p>18, 2021</p>
+                                        <p>Admin</p>
+                                    </span>
+                                    <h1>Creativity and Inspiration</h1>
+                                </span>
+                            </span>
+                        </a></li>
+                    <li class="my-6"><a class="hover:text-blue-400" href="">
+                            <span class="flex items-center gap-5">
+                                <img class="w-16" src="./img/image_2.jpg" alt="">
+                                <span>
+                                    <span class="flex gap-2">
+                                        <p>Jan.</p>
+                                        <p>18, 2021</p>
+                                        <p>Admin</p>
+                                    </span>
+                                    <h1>Creativity and Inspiration</h1>
+                                </span>
+                            </span>
+                        </a></li>
+                    <li class="my-7"><a class="hover:text-blue-400" href="">
+                            <span class="flex items-center gap-5">
+                                <img class="w-16" src="./img/image_3.jpg" alt="">
+                                <span>
+                                    <span class="flex gap-2">
+                                        <p>Jan.</p>
+                                        <p>18, 2021</p>
+                                        <p>Admin</p>
+                                    </span>
+                                    <h1>Creativity and Inspiration</h1>
+                                </span>
+                            </span>
+                        </a></li>
+                </ul>
+            </div>
+            <ul>
+                <li class=""><a href="">
+                        <h1 class="text-2xl">Have a Questions?</h1>
+                    </a></li>
+                <li class="my-8"><a class="hover:text-blue-400" href="">
+                        <p>203 Fake St. Mountain View, San <br>Francisco, California, USA</p>
+                    </a></li>
+                <li class="my-8"><a class="hover:text-blue-400" href="">+2 392 3929 210</a></li>
+                <li class="my-8"><a class="hover:text-blue-400" href="">info@yourdomain.com</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container bg-blue-600 p-16 text-white text-center">
+        <h1>Copyright ©2024 All rights reserved | This template is made with ❤️ by Colorlib</h1>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script class="script">
+        document.getElementById('toggleButton').addEventListener('click', function () {
+            let navbar = document.getElementById('navbar');
+            if (navbar.style.display === 'block') {
+                navbar.style.display = 'none';
+            } else {
+                navbar.style.display = 'block';
+            }
+        });
+
+    </script>
+</body>
+
+</html>
